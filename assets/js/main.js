@@ -1,36 +1,36 @@
 /*
-Author       : Hash Theme.
-Template Name: Kalka - One Page Business Template
-Version      : 1.0
-*/
+ Author       : Hash Theme.
+ Template Name: Kalka - One Page Business Template
+ Version      : 1.0
+ */
 /*=============================================
-Table Of Contents
-================================================
-1. PRELOADER JS
-2. BOOTSTRAP TOOLTIP 
-3. MENU JS
-4. HOME SLIDER JS 
-5. TESTIMONIAL SLIDER
-6. BLOG SLIDER
-7. BRANCH LOGO
-8. COUNTDOWN JS  
-9. SECTIONS BACKGROUNDS JS 
-10. GOOGLE MAP
-11. MIXITUP JS
-12. VENOBOX JS
-13. WOW ANIMATION JS
-
-Table Of Contents end
+ Table Of Contents
+ ================================================
+ 1. PRELOADER JS
+ 2. BOOTSTRAP TOOLTIP 
+ 3. MENU JS
+ 4. HOME SLIDER JS 
+ 5. TESTIMONIAL SLIDER
+ 6. BLOG SLIDER
+ 7. BRANCH LOGO
+ 8. COUNTDOWN JS  
+ 9. SECTIONS BACKGROUNDS JS 
+ 10. GOOGLE MAP
+ 11. MIXITUP JS
+ 12. VENOBOX JS
+ 13. WOW ANIMATION JS
+ 
+ Table Of Contents end
  ================================================
  */
-(function($) {
+(function ($) {
     'use strict';
 
-    jQuery(document).on('ready', function() {
+    jQuery(document).on('ready', function () {
 
         /* 1. PRELOADER JS */
 
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             $('.loadscreen').fadeOut();
             $('.preloader').delay(350).fadeOut('slow');
         });
@@ -47,7 +47,7 @@ Table Of Contents end
 
         /* 3. START MENU JS */
 
-        $('a.page-scroll').on('click', function(e) {
+        $('a.page-scroll').on('click', function (e) {
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top - 50
@@ -55,7 +55,7 @@ Table Of Contents end
             e.preventDefault();
         });
 
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
                 $('.main-menu').addClass('menu-animation');
             } else {
@@ -63,7 +63,7 @@ Table Of Contents end
             }
         });
 
-        $(document).on('click', '.navbar-collapse.in', function(e) {
+        $(document).on('click', '.navbar-collapse.in', function (e) {
             if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
                 $(this).collapse('hide');
             }
@@ -71,12 +71,12 @@ Table Of Contents end
 
         /* END MENU JS */
 
-		
+
         /* 4. START HOME SLIDER JS */
         $('.carousel').carousel({
             interval: 6000
         });
-       /* 4. END HOME SLIDER JS */
+        /* 4. END HOME SLIDER JS */
 
 
 
@@ -124,9 +124,9 @@ Table Of Contents end
 
 
         /* 8. START COUNTDOWN JS */
-        $('.counter-section').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        $('.counter-section').on('inview', function (event, visible, visiblePartX, visiblePartY) {
             if (visible) {
-                $(this).find('.timer').each(function() {
+                $(this).find('.timer').each(function () {
                     var $this = $(this);
                     $({
                         Counter: 0
@@ -135,7 +135,7 @@ Table Of Contents end
                     }, {
                         duration: 2000,
                         easing: 'swing',
-                        step: function() {
+                        step: function () {
                             $this.text(Math.ceil(this.Counter));
                         }
                     });
@@ -149,7 +149,7 @@ Table Of Contents end
         /* 9. SECTIONS BACKGROUNDS JS */
 
         var pageSection = $("section");
-        pageSection.each(function(indx) {
+        pageSection.each(function (indx) {
 
             if ($(this).attr("data-background")) {
                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
@@ -158,19 +158,19 @@ Table Of Contents end
 
         /* END SECTIONS BACKGROUNDS */
 
-		
+
         /* 10. START GOOGLE MAP */
 
         function initialize() {
             var mapOptions = {
-                zoom: 11,
+                zoom: 14,
                 scrollwheel: false,
-                center: new google.maps.LatLng(40.7143528, -74.0059731)
+                center: new google.maps.LatLng(21.1289062, 72.7148075)
             };
             var map = new google.maps.Map(document.getElementById('map'),
-                mapOptions);
+                    mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.7143528, -74.0059731),
+                position: new google.maps.LatLng(21.1289062, 72.7148075),
                 animation: google.maps.Animation.BOUNCE,
                 icon: 'assets/img/map-marker.png',
                 map: map
@@ -183,37 +183,37 @@ Table Of Contents end
     });
 
     /* 11. START MIXITUP JS */
-	
-	$('.portfolio-container').mixItUp({
-		load: {
-			sort: 'order:asc' /* default:asc */
-		},
-		animation: {
-			effects: 'fade rotateX(180deg)', /* fade scale */
-			duration: 700 /* 600 */
-		},
-		selectors: {
-			filter: '.filter' /* .filter */
-		},
-		callbacks: {
-			onMixEnd: function(state) {
-				console.log(state) /* null */
-			}
-		}
-   });
+
+    $('.portfolio-container').mixItUp({
+        load: {
+            sort: 'order:asc' /* default:asc */
+        },
+        animation: {
+            effects: 'fade rotateX(180deg)', /* fade scale */
+            duration: 700 /* 600 */
+        },
+        selectors: {
+            filter: '.filter' /* .filter */
+        },
+        callbacks: {
+            onMixEnd: function (state) {
+                console.log(state) /* null */
+            }
+        }
+    });
 
     /* END MIXITUP JS */
 
 
     /* 12. START  VENOBOX JS */
-   
+
     $('.venobox').venobox({
         numeratio: true,
         titleattr: 'data-title',
         infinigall: true
     });
-	
-	/* 12. END  VENOBOX JS */
+
+    /* 12. END  VENOBOX JS */
 
     /* 13. START WOW ANIMATION JS */
 
