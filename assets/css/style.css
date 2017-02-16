@@ -71,6 +71,7 @@ a:focus {
     text-decoration: none;
 }
 p {
+    font-family: "Montserrat", sans-serif;
     line-height: 26px;
     margin-bottom: 0;
 }
@@ -78,7 +79,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
 }
 fieldset {
     border: 0 none;

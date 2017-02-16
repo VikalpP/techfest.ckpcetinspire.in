@@ -13,8 +13,8 @@
 .navbar { background: rgba(0,0,0, 0.35) !important; }
 
 nav ul li .active{
-	        color: Yellow !important;
-	        font-weight: 400 !important; 
+    color: Yellow !important;
+    font-weight: 400 !important; 
 }
 
 .bullets li { list-style-type: circle; }
