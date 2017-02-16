@@ -17,7 +17,8 @@ nav ul li .active{
 	        font-weight: 400 !important; 
 }
 
-.bullets li { list-style-type: circle; }
-.decimal li { list-style-type: decimal; }
-.lower_alpha li { list-style-type: lower-alpha !important; }
-.lower_roman li { list-style-type: lower-roman !important; }
+li.bullets { list-style-type: circle; }
+li.decimal  { list-style-type: decimal; }
+li.lower_alpha  { list-style-type: lower-alpha !important; }
+li.upper_alpha  { list-style-type: upper-alpha; }
+li.lower_roman  { list-style-type: lower-roman !important; }
