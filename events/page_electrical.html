@@ -21,38 +21,22 @@
     <link rel="stylesheet" href="assets/css/mystyle.css" />
 
     <style>
-        @media (max-width: 555px) and (min-width: 480px) {
-            #navChanges {
-                flex-direction: column;
+        @media (max-width: 555px) and (min-width: 480px){
+                #navChanges{ flex-direction: column; }
+                #header nav ul li:first-child{ border-top: 0;  }
+                #header nav ul li{ border-left: 0; border-top: solid 1px #ffffff; }
+                #header nav.use-middle:after { height: 0 !important; }
             }
-            #header nav ul li:first-child {
-                border-top: 0;
-            }
-            #header nav ul li {
-                border-left: 0;
-                border-top: solid 1px #ffffff;
-            }
-            #header nav.use-middle:after {
-                height: 0 !important;
-            }
+        
+        @media (max-width: 500px) {
+            article .container-fluid { padding: initial; }
         }
         
         @media (max-width: 500px) {
-            article .container-fluid {
-                padding: initial;
-            }
+            .EquContent { display: block; }
         }
         
-        @media (max-width: 500px) {
-            .EquContent {
-                display: block;
-            }
-        }
-        
-        a:hover {
-            text-decoration: none;
-            color: white;
-        }
+        a:hover { text-decoration: none; color: white; }
     </style>
 
 </head>
@@ -115,12 +99,6 @@
             <div class="content" id="PadAbove">
                 <div class="inner">
                     <h1>Electronics & Electrical </h1>
-                    <p>
-                        <!--[-->A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released
-                        <!--]--><br />
-                        <!--[-->for free under the <a href="https://html5up.net/license">Creative Commons</a> license.
-                        <!--]-->
-                    </p>
                 </div>
             </div>
             <nav>
@@ -155,7 +133,7 @@
                 <div class="Divs">
                     <h3>Round 1 :</h3>
                     <div>
-                        <ol>
+                        <ol class="decimal">
                             <li>This round consists of test which will be taken on paper.</li>
                             <li>This round will have MCQ’s.</li>
                             <li>Marks and Time will be take into account.</li>
@@ -164,7 +142,7 @@
                     </div>
                     <h3>Round 2 :</h3>
                     <div>
-                        <ol>
+                        <ol class="decimal">
                             <li>This round consists of test which will be taken on paper.</li>
                             <li>This round will have questions (no option will be provided) where participant have to write.</li>
                             <li>Marks and Time will be take into account.</li>
@@ -173,7 +151,7 @@
                     </div>
                     <h3>Final :</h3>
                     <div>
-                        <ol>
+                        <ol class="decimal">
                             <li>This round consists of coding which is conducted in computer lab.</li>
                             <li>Editors to be used is Turbo C/C++.</li>
                         </ol>
@@ -185,7 +163,7 @@
                 <div class="Divs">
                     <h3>Rules and Regulations :</h3>
                     <div>
-                        <ol>
+                        <ol class="decimal">
                             <li>Organizer has the rights to change any rules or evaluation criteria, if necessary.</li>
                             <li>Each participant must have the identity card of his/her respected institute.</li>
                             <li>Decision taken by the judges will be consider as a final decision, and it cannot be challenged in any circumstances.</li>
@@ -288,25 +266,25 @@
                 <div class="Divs">
                     <h3>Round 1 :</h3>
                     <div>
-                        <ul>
+                        <ul class="bullets">
                             <li>This round is based on the basic fundamentals related to basic electrical and electronics engineering.</li>
                         </ul>
                     </div>
                     <h3>Round 2 :</h3>
                     <div>
-                        <ul>
+                        <ul class="bullets">
                             <li>Different challenging tasks will be given to participants related to basic electrical engineering, basic electronics and electrical machines. Every challenges will be time bounded in this round. </li>
                         </ul>
                     </div>
                     <h3>Round 3 :</h3>
                     <div>
-                        <ul>
+                        <ul class="bullets">
                             <li>Different challenging tasks will be given to participants related to basic electrical engineering, basic electronics and electrical machines. Every challenges will be time bounded in this round. </li>
                         </ul>
                     </div>
                     <h3>Final :</h3>
                     <div>
-                        <ul>
+                        <ul class="bullets">
                             <li>This round is based on real implementation of assigned task within given time limit. Necessary hints and components will be provided at the time of competition.</li>
                         </ul>
                     </div>
@@ -318,14 +296,14 @@
                 <div class="Divs">
                     <h3>Rules and Regulations :</h3>
                     <div>
-                        <ol>
+                        <ol class="decimal">
                             <li>Each group consist of 2 participants.</li>
                             <li>All the necessary components will be provided.</li>
                             <li>Students should have the knowledge of  basic electrical and electronics engineering.</li>
                             <li>Event consists of three rounds.</li>
 
                             <li>Disqualification rules :</li>
-                            <ol class="alpha">
+                            <ol class="lower_alpha">
                                 <li>Any team not present at the allotted time will be disqualified by default.</li>
                                 <li>Use of mobile phone and Internet during the competition is strictly prohibited, if found that team will be directly disqualified at that moment.</li>
                                 <li>The decision of the organizers in declaring the results will be final. No queries in this regard in this regard will be entertained.</li>
@@ -424,7 +402,7 @@
                 <div class="Divs">
                     <h3>Rules and Regulations:</h3>
                     <div class="Divs">
-                        <ol>
+                        <ol type="a.">
                             <li>Participants from any branch or stream can participate in this event.</li>
                             <li>Three participants are allowed in each team. Participants must register as a team.</li>
                             <li>Participants must not possess any mirror or any other reflection friendly smooth materials during the event.</li>
@@ -522,9 +500,9 @@
                 <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
                 
                 <!-- Rule Section -->
-                <h3>Rules :</h3>
-                <div class="Divs Bullets">
-                        <ul>
+                <h3>Rules and Regulations:</h3>
+                <div class="Divs">
+                        <ul class="decimal">
                             <li>Per Team two participants are allowed. </li>
                             <li>There will be two rounds -Qualification round and Final round with time limits.</li>
                             <li>Team has to implement the given aim on Arduino kit.</li>
@@ -601,7 +579,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <!--p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p-->
+            <p class="copyright">&copy; ckpcetinspire.in <br/>Design: <a href="https://html5up.net">HTML5 UP</a></p>
         </footer>
 
     </div>

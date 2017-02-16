@@ -21,32 +21,19 @@
     <link rel="stylesheet" href="assets/css/mystyle.css" />
 
     <style>
-        @media (max-width: 1245px) and (min-width: 480px) {
-            #navChanges {
-                flex-direction: column;
+          @media (max-width: 1245px) and (min-width: 480px){
+                #navChanges{ flex-direction: column; }
+                #header nav ul li:first-child{ border-top: 0;  }
+                #header nav ul li{ border-left: 0; border-top: solid 1px #ffffff; }
+                #header nav.use-middle:after { height: 0 !important; }
             }
-            #header nav ul li:first-child {
-                border-top: 0;
+            @media (max-width: 435px) {
+                .EquContent{ display: block; } /*GTU Equvalient name */
+                .Extrahead{ display: block; } /*Extra event name */
             }
-            #header nav ul li {
-                border-left: 0;
-                border-top: solid 1px #ffffff;
-            }
-            #header nav.use-middle:after {
-                height: 0 !important;
-            }
-        }
-        
-        @media (max-width: 435px) {
-            .EquContent {
-                display: block;
-            }
-        }
-        
-        a:hover {
-            text-decoration: none;
-            color: white;
-        }
+
+            a:hover{ text-decoration: none; color: white; }
+            .Extrahead{ letter-spacing: 7.33px !important; }
     </style>
 
 </head>
@@ -109,12 +96,6 @@
             <div class="content" id="PadAbove">
                 <div class="inner">
                     <h1>Computer-IT</h1>
-                    <p>
-                        <!--[-->A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released
-                        <!--]--><br />
-                        <!--[-->for free under the <a href="https://html5up.net/license">Creative Commons</a> license.
-                        <!--]-->
-                    </p>
                 </div>
             </div>
             <nav class="use-middle">
@@ -137,7 +118,7 @@
             <article id="RelayCoding">
                 <h2 class="major">Relay Coding</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -201,9 +182,9 @@
 
             <!-- C-Quiz and Debugging -->
             <article id="C_Quiz_Debugging">
-                <h2 class="major"> C-Quiz and <span class="EquContent"> Debugging </span></h2>
+                <h2 class="major"> C-Quiz and <span class="Extrahead"> Debugging </span></h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -269,7 +250,7 @@
             <article id="E_TreasureHunt">
                 <h2 class="major">E-Treasure Hunt</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -334,7 +315,7 @@
             <article id="LogoDesign">
                 <h2 class="major">Logo Design</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -400,7 +381,7 @@
             <article id="QuickPage">
                 <h2 class="major">Quick Page</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -466,7 +447,7 @@
             <article id="Gaming_CS">
                 <h2 class="major">Gaming - CS</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -532,7 +513,7 @@
             <article id="Gaming_NFS">
                 <h2 class="major">Gaming - NFS</h2>
 
-                <!--  <!-- TagLine -->
+                <!-- TagLine -->
                 <!-- <h3 class="TagLine">One line statement/tag line for event.</h3> -->
 
                 <!-- Desciption -->
@@ -597,7 +578,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <!--p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p-->
+            <p class="copyright">&copy; ckpcetinspire.in <br/>Design: <a href="https://html5up.net">HTML5 UP</a></p>
         </footer>
 
     </div>
