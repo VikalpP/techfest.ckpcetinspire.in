@@ -1,4 +1,4 @@
-.navbar.navbar-brand{ border-bottom:none!important; }
+.navbar.navbar-brand{ border-bottom:none !important; }
 .navbar .navbar-header a{ padding: 0px 15px !important;}
 .main-menu li a {
     color: white!important;
@@ -7,17 +7,17 @@
     text-transform: uppercase;
     border-bottom:none!important;
 }
- .main-menu li a:hover{
-           color: yellow!important;
-}
-.navbar
-{
-    background: rgba(0,0,0, 0.35) !important;
-}
+
+.main-menu li a:hover{ color: yellow!important; }
+
+.navbar { background: rgba(0,0,0, 0.35) !important; }
+
 nav ul li .active{
-	        color: Yellow !important;
-	        font-weight:400 !important; 
+    color: Yellow !important;
+    font-weight: 400 !important; 
 }
-ol li {
-	list-style-type: decimal;
-}
+
+.bullets li { list-style-type: circle; }
+.decimal li { list-style-type: decimal; }
+.lower_alpha li { list-style-type: lower-alpha !important; }
+.lower_roman li { list-style-type: lower-roman !important; }
