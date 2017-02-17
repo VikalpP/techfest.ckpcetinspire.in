@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-/*
+
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,7 +14,7 @@ Primary style
     content: '';
 }
 
-*/
+
 a {
     color: #89ba2c;
     text-decoration: none;
@@ -28,6 +28,13 @@ Main components
 html, body {
     height: 100%;
 }
+
+
+.cd-btn{
+    padding: 15px; position: fixed; display: block; background-color: #337ab7; color: #FFF; bottom: 10px; left: 10px;
+    z-index: 1499;
+}
+.cd-btn:hover{background-color: #000; color: #FFF; }
 
 .cd-main-content {
     text-align: center;
@@ -68,7 +75,7 @@ html, body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 50%;
     visibility: hidden;
     -webkit-transition: visibility 0s 0.6s;
     -moz-transition: visibility 0s 0.6s;
@@ -80,7 +87,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background: transparent;
     cursor: pointer;
@@ -110,6 +117,7 @@ html, body {
     -moz-animation: cd-close-2 0.6s 0.3s;
     animation: cd-close-2 0.6s 0.3s;
 }
+
 
 @-webkit-keyframes cd-close-1 {
     0%, 50% {
@@ -177,8 +185,7 @@ html, body {
 }
 .cd-panel-header {
     position: fixed;
-    width: 90%;
-    /*height: 50px;*/
+    width: 50%;    
     line-height: 50px;
     background: rgba(255, 255, 255, 0.96);
     z-index: 1502;
@@ -187,7 +194,7 @@ html, body {
     -moz-transition: top 0.3s 0s;
     transition: top 0.3s 0s;
 }
-.cd-panel-header h1 {
+.cd-panel-header h2 {
     font-weight: bold;
     color: #89ba2c;
     padding-left: 5%;
@@ -214,7 +221,7 @@ html, body {
 }
 @media only screen and (min-width: 1170px) {
     .cd-panel-header {
-        width: 50%;
+        width: 25%;
     }
 }
 
@@ -232,12 +239,12 @@ html, body {
 }
 .cd-panel-close::before, .cd-panel-close::after {
     /* close icon created in CSS */
-    position: absolute;
-    top: 22px;
+    position: absolute;    
+    top: 32px;
     left: 20px;
     height: 3px;
     width: 20px;
-    background-color: #424f5c;
+    background-color: #337ab7;
     /* this fixes a bug where pseudo elements are slighty off position */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -257,7 +264,7 @@ html, body {
     transform: rotate(-45deg);
 }
 .no-touch .cd-panel-close:hover {
-    background-color: #424f5c;
+    background-color: #337ab7;
 }
 .no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
     background-color: #ffffff;
@@ -285,10 +292,11 @@ html, body {
 
 .cd-panel-container {
     position: fixed;
-    width: 90%;
+    width: 50%;
     height: 100%;
     top: 0;
-    background: #dbe2e9;
+    color: #FFF;
+    background: #559cd9;    
     z-index: 1501;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
@@ -328,12 +336,12 @@ html, body {
 }
 @media only screen and (min-width: 768px) {
     .cd-panel-container {
-        width: 70%;
+        width: 50%;
     }
 }
 @media only screen and (min-width: 1170px) {
     .cd-panel-container {
-        width: 50%;
+        width: 25%;
     }
 }
 
