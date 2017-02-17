@@ -1070,7 +1070,7 @@
 			height: 100%;
 		}
 
-		#bg:before {
+		/*#bg:before {
 			-moz-transition: background-color 2.5s ease-in-out;
 			-webkit-transition: background-color 2.5s ease-in-out;
 			-ms-transition: background-color 2.5s ease-in-out;
@@ -1100,7 +1100,7 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
-		}
+		}*/
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
