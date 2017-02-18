@@ -61,7 +61,6 @@ a {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
-a:focus,
 a:hover {
     color: #337ab7;
     text-decoration: none;
