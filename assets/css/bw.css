@@ -1,8 +1,0 @@
-.one , .slider-area,.map,.footer
-{
-	filter: grayscale(70%);
-}
- .one:hover , .slider-area:hover,.map:hover,.footer:hover{
-	filter: grayscale(0%);
-}
-
