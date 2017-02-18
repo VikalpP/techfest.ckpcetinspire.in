@@ -315,8 +315,8 @@ fieldset {
 }
 .navbar-default.menu-animation {
     background-color: #fff !important;
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
     width: 100%;
 }
 @media only screen and (max-width: 480px) {
