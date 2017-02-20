@@ -165,12 +165,12 @@
             var mapOptions = {
                 zoom: 14,
                 scrollwheel: false,
-                center: new google.maps.LatLng(21.131866, 72.717728)
+                center: new google.maps.LatLng(21.1289062, 72.7148075)
             };
             var map = new google.maps.Map(document.getElementById('map'),
                     mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(21.133335, 72.718204),
+                position: new google.maps.LatLng(21.1289062, 72.7148075),
                 animation: google.maps.Animation.BOUNCE,
                 icon: 'assets/img/map-marker.png',
                 map: map
