@@ -1,0 +1,15 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Allow: /index.html
+Allow: /events/page_computer.html
+Allow: /events/page_electrical.html
+Allow: /events/page_civil.html
+Allow: /events/page_mechanical.html
+Allow: /events/page_chemical.html
+Allow: /events/page_robotics.html
+Allow: /events/page_pharmacy.html
+Allow: /events/page_general.html
+Allow: /events/page_management.html
+
+Sitemap: http://www.techfest.ckpcetinspire.in/sitemap.xml
