@@ -31,8 +31,9 @@
                       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <link rel="stylesheet" href="assets/css/bw.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <link rel="stylesheet" href="assets/css/mystyle.css">
+        <link rel="stylesheet" href="assets/css/side-panel.css">
         <style type="text/css">
             .carousel-inner > .item > img,
             .carousel-inner > .item > a > img {
@@ -40,8 +41,6 @@
             }
         </style>
     </head>
-
-
     <body data-spy="scroll" data-offset="80">
 
         <!-- START PRELOADER -->
@@ -64,8 +63,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand"><img src="assets/img/logo_1.png">
-                    </a>
+                    <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <nav>
@@ -76,12 +74,13 @@
                             <!--<li><a class="page-scroll" href="index.html#team"><span>Team</span></a></li>
                             <li><a class="page-scroll" href="index.html#pricing"><span>Sponsors</span></a></li>-->
                             <!--<li><a class="page-scroll" href="http://webapp.ckpcetinspire.in/registrations/register" target="_blank"><span>REGISTRATION</span></a></li>-->
+                            <li><a class="page-scroll" href="index.html#registration"><span>Registration</span></a></li>
                             <li><a class="page-scroll" href="index.html#schedule"><span>Schedule</span></a></li>
                             <li><a class="page-scroll" href="index.html#contact"><span>Contact</span></a></li>                            
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </div>            
             <!--- END CONTAINER -->
         </div>
         <!-- END NAVBAR -->
@@ -93,45 +92,78 @@
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
+                        
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="assets/img/bg/poster1.png" alt="TECHFEST" class="img-responsive">
+                            <img src="events/images/comp_slider.jpg" alt="TECHFEST" class="img-responsive">
                         </div>
-                        <!--  <div class="item active">
-                             <img src="assets/img/bg/slider-1.jpg" alt="Chania" class="img-responsive">
-                         </div> -->
-                        <!-- <div class="item">
+                         <div class="item">
+                             <img src="events/images/electrical_slider.jpg" alt="Chania" class="img-responsive">
+                         </div>
+                        <div class="item">
                             <img src="assets/img/bg/2.jpg" alt="Chania" class="img-responsive">
-                        </div> -->
-                        <!--  <div class="item">
+                        </div>
+                         <div class="item">
                              <img src="assets/img/bg/slide-3.jpg" alt="Flower" class="img-responsive">
-                         </div> -->
+                         </div>
                     </div>                    
                 </div>
             </div>    
-            <div style="text-align: center">
+            <div style="text-align: center;">
                 <h6>BACK TO BASICS</h6>
-                <h3>6-7 March, 2017</h3>
-            </div>
+                <h3>6-7 March, 2017</h3>                
+            </div>            
         </section>
         <!-- END  HOME SLIDER -->
 
+        <!-- START NEWS -->
+        <div id="RegClose">
+            Late date for registrations
+
+            <div class="date">
+                28-Feb-2017
+                <span class="closebtn" onclick="this.parentElement.parentElement.style.display = 'none';">&times;</span> 
+            </div>
+        </div>
+
+        <a href="#0" class="cd-btn">
+            Latest Updates
+        </a>
+        <div class="cd-panel from-left">
+            <header class="cd-panel-header">
+                <h2>Updates</h2>
+                <a href="#0" class="cd-panel-close">Close</a>
+            </header>
+            <div class="cd-panel-container">
+                <div class="cd-panel-content">
+                    <div class="news">
+                        <div class="col-md-6 col-sm-12">
+                            Link 1
+                        </div>
+                    </div>
+                    <!--<ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                    </ul>-->
+                </div> <!-- cd-panel-content -->
+            </div> <!-- cd-panel-container -->
+        </div> <!-- cd-panel -->
+        <!-- END NEWS -->
+
         <!-- START ABOUT -->
-        <section id="about" class="about-us section-padding">
+        <section id="about" class="about-us section-padding" class="about-bg">
             <div class="container text-center">
                 <div class="row">
                     <div class="section-title">
                         <h2>About Us</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                     </div>
                     <!-- END SECTION TITLE -->
                     <div class="">
@@ -185,11 +217,7 @@
                 <div class="row">
                     <div class="section-title text-center">
                         <h2>EVENTS</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="row single-feature-border">
@@ -275,11 +303,7 @@
                 <div class="row text-center">
                     <div class="section-title">
                         <h2>Our Team</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                       
                         <p></p>
                     </div>
                 </div>
@@ -389,18 +413,13 @@
 </div>
 </section>
         -->
-
         <!-- START SPONSORS
         <section id="blog" class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="section-title text-center">
                         <h2>Our Sponsors</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        
                         <p>.......Our Sponsers Details or any other details....... </p>
                     </div>
                 </div>
@@ -447,16 +466,44 @@
         SPONSORS -->
 
         <!-- START SCHEDULE -->
+        <section id="registration" class="section-padding">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Registrations</h2>
+                       
+                    </div>
+                    <!-- END SECTION TITLE -->
+                    <div class="text-justify">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>
+                                Steps for Registrations
+                            </h3>
+                            <ul>
+                                <li>Visit the following link to register.</li>
+                                <li>Online receipt for pending registration will be generated. Keep it with you for your record.</li>
+                                <li>Your registration will get confirmed upon receiving payment at our side.</li>
+                                <li>A representative from our institute would contact and probably visit your college on February 27, 2017 for payment or else we would contact you in person for the same.</li>
+                                <li>You can contact us on our email address or mobile number mentioned on poster for any further query.</li>
+                            </ul>
+                            <br/>
+                            <a class="registrations" href="http://webapp.ckpcetinspire.in/registrations/register" target="_blank">
+                                REGISTRATION
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SCHEDULE -->
+
+        <!-- START SCHEDULE -->
         <section id="schedule" class="schedule section-padding">
             <div class="container text-center">
                 <div class="row">
                     <div class="section-title">
                         <h2>Schedule</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        
                     </div>
                     <!-- END SECTION TITLE -->
                     <div class="">
@@ -475,11 +522,7 @@
                 <div class="row">
                     <div class="section-title text-center">
                         <h2>Connect with us</h2>
-                        <div class="dot">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        
                         <p></p>
                     </div>
                     <!-- END SECTION TITLE -->
@@ -492,8 +535,7 @@
                         <div class="single-address-text">
                             <h4>Our Location</h4>
                             <p>
-                                Near Malvan Mandir Via Magdalla Port, Dumas Road,
-                                Surat. Pin - 395006
+                                Near Malvan Mandir, Via Magdalla Port, Dumas Road,Surat.
                             </p>
                         </div>    
                     </div>
@@ -582,10 +624,9 @@
         <!-- form-contact js -->
         <script src="assets/js/form-contact.js"></script>
         <!-- map js -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA">
-
-        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
         <!-- Main Js -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/side-panel.js"></script>
     </body>
 </html>

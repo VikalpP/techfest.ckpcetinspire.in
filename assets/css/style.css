@@ -1,4 +1,4 @@
-
+/*
 Author       : Hash Theme.
 Template Name: Kalka - One Page Business Template
 Version      : 1.0
@@ -61,7 +61,6 @@ a {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
-a:focus,
 a:hover {
     color: #337ab7;
     text-decoration: none;
@@ -249,7 +248,8 @@ fieldset {
     border-color: #fff
 }
 .main-menu {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.8);
+    /*background: rgba(0, 0, 0, 0.35);*/
 }
 .main-menu li a {
     color: #fff !important;
@@ -314,8 +314,8 @@ fieldset {
 }
 .navbar-default.menu-animation {
     background-color: #fff !important;
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
     width: 100%;
 }
 @media only screen and (max-width: 480px) {

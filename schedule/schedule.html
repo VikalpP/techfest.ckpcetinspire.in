@@ -1,0 +1,317 @@
+<!doctype html>
+	<head>
+		<title>Responsive Tabs Demo - Pete Love</title>
+		    <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/responsive-tabs.css">	    
+ 	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- SITE TITLE -->
+    <title>SCHEDULE</title>
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="http://fonts.googleapis.com/css?family=Cousine:400,700|Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <!--- owl carousel Css-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <!-- venobox -->
+    <link rel="stylesheet" href="assets/venobox/css/venobox.css" />
+     <link rel="stylesheet" href="assets/css/bw.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="css/table.css">
+
+
+    <style type="text/css">
+        .single-feature .single-feature-icon i.custom {
+    background: black !important;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 23px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+	}
+	/* Styles for demo page only - not required */
+
+			body {
+				background: #fff;
+				color: #333;
+				padding:15px 20px;
+				font-family: Helvetica, Arial, sans-serif;
+				line-height: 1.5em;
+				
+			}
+			a { color: #0496b6}
+
+			h1, h2 { margin: 1em 0 1.5em 0; color: #0f556f}
+			.tabs h1, .tabs h2 { color: #333; margin-bottom: 1em;}
+			.tabs ul, .tabs ol, .tabs p { margin-top:0; padding-top: 1em;}
+			.tabs ul li, .tabs ol li { margin-bottom: 0.5em;}
+
+			hgroup h1 { margin-bottom:0; margin-top:0; line-height: 1.2em;}
+			
+			hgroup h2 { font-size: 1.1em; font-weight: normal; position: absolute; top: 16px; right:20px;}
+
+			.btn { display: block; float: left;  padding: 10px 15px; background: #0496b6; font-size: 1.5em; color: #fff; font-weight: bold; text-decoration: none; border-radius: 5px;  text-align: center; box-shadow: 2px 2px 2px #eee;}
+			.btn:hover { background: #3cb7d3}
+			.clearfix {
+			  *zoom: 1;
+			}
+
+			.clearfix:before,
+			.clearfix:after {
+			  display: table;
+			  content: "";
+			}
+
+			.clearfix:after {
+			  clear: both;
+			}
+			.intro { margin: 20px 0; background: #c9f6f9; border: 1px solid #ccc; box-shadow: 2px 2px 2px #eee; padding: 5px 15px 10px 15px; }
+			p.demo-intro { font-size: 1.2em; margin-bottom: -0.5em; font-weight: bold; }
+
+			@media (max-width: 767px) {
+				hgroup h1 { margin-top: 25px;}
+				hgroup h2 { top: 0; left: 5px; font-size:12px;}
+			 	.btn { width: 80%; margin: 20px auto; float:none;}
+			}
+
+		</style>
+	</head>
+
+
+	<body>
+
+
+
+
+		
+
+<body data-spy="scroll" data-offset="80">
+
+    <!-- START PRELOADER -->
+    <!-- <div class="preloader">
+        <div class="loadscreen">
+            <div class="loadscreen-in">
+                <h4>INSPIRE</h4>
+            </div>
+        </div>
+    </div>
+     --><!-- END PRELOADER -->
+
+    <!-- START NAVBAR -->
+    <div class="navbar navbar-default navbar-fixed-top main-menu">
+        <div class="container">
+            <div class="navbar-header navbar-sch">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="assets/img/logo_1.png" alt="inspire_logo">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="index.html#home"><span>Home</span></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.html#about"><span>About</span></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.html#events"><span>EVENTS</span></a>
+                        </li>
+                        <!-- <li><a class="page-scroll" href="index.html#portfolio"><span>Portfolio</span></a>
+                        </li> -->
+                        <li><a class="page-scroll" href="index.html#team"><span>Team</span></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.html#pricing"><span>SPONSORS</span></a>
+                        </li>
+                        <li><a class="page-scroll" href=".html"><span>REGISTRATION</span></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.html#contact"><span>CONTACT</span></a>
+                        </li>
+                        <li><a class="page-scroll" href="index.html#schedule"><span>SCHEDULE</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--- END CONTAINER -->
+    </div>
+    <!-- END NAVBAR -->
+<br/><br/><br/><br/><br/>
+    <hgroup>
+			<center><h1> Schedule</h1></center>
+		
+		</hgroup>
+
+<!-- 
+
+		<div class="intro">
+			<p class="demo-intro">In this example, the <strong>media query breakpoint is set 768px</strong>.</p>
+		</div>
+ -->
+		<div class="responsive-tabs">
+
+			<h2>Computer</h2>
+			<div class="Divs">
+			<div class="Divs container-fluid">
+			<br/><br/>
+				<table>
+  <thead style="background-color: #b0c8d4">
+    <tr>
+      <td>No.</td>
+						<td>Event Name</td>
+						<td>Building</td>
+						<td>Class</td>
+						<td>Timing</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    	<td>1</td>
+      <td><strong>Quick Page</strong></td>
+      <td>1</td>
+      <td>104</td>
+      <td>11:00</td>
+    </tr>
+    <tr>
+    	<td>1</td>
+      <td><strong>Logo Design</strong></td>
+      <td>1</td>
+      <td>102</td>
+      <td>1:00</td>
+    </tr>
+    <tr>
+    	<td>1</td>
+      <td><strong>Code Vita</strong></td>
+      <td>1</td>
+      <td>106</td>
+      <td>10:00</td>
+    </tr>
+    <tr>
+    	<td>1</td>
+      <td><strong>Gaming -CS</strong></td>
+      <td>1</td>
+      <td>201</td>
+      <td>1:00</td>
+    </tr>
+    <tr>
+    	<td>1</td>
+      <td><strong>Quick Page</strong></td>
+      <td>1</td>
+      <td>202</td>
+      <td>2:00</td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+		</div>
+			<h2>Electrical - EC</h2>
+			<div>
+				<ol>
+					<li>Include jQuery (minimum version 1.5.1 and above)</li>
+					<li>Include responsiveTabs.js</li>
+					<li>Include the css from responsive-tabs.css, and adjust the media query breakpoint as desired</li>
+					<li>Markup your tabs regions as follows:
+					<code><pre>
+&lt;div class="tabs">
+  &lt;h2>[...]&lt;/h2>
+  &lt;div>[...]&lt;/div>
+  &lt;h2>[...]&lt;/h2>
+  &lt;div>[...]&lt;/div>
+&lt;/div>
+					</pre></code>
+					<span>The headings can be any level, from h1 to h6. Note that the first (leftmost) tab panel will be open by default in 'tab view', while all panels will be closed in 'accordion view' (ie. below the specified breakpoint).</span>
+					<p>If you want a specific tab other than the first to be open by default then add the class 'responsive-tabs__panel--active' onto the panel, eg:</p>
+					<code><pre>
+&lt;div class="tabs">
+  &lt;h2>[...]&lt;/h2>
+  &lt;div>[...]&lt;/div>
+  &lt;h2>[...]&lt;/h2>
+  &lt;div class="responsive-tabs__panel--active">[...]&lt;/div>
+&lt;/div>
+					</pre></code>
+
+					</li>
+					<li>On document ready, call the function responsiveTabs() </li>
+				</ol>
+			</div>
+			
+			<h2>Civil</h2>
+			<div>
+			</div>
+
+
+			<h2>Mechanical</h2>
+			<div>
+			<table border="0.5">
+					<tr>
+						<td>No.</td>
+						<td>Event Name</td>
+						<td>Building</td>
+						<td>Day</td>
+						<td>Timing</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<h2>Robotics</h2>
+			<div>
+			</div>
+
+
+			<h2>Chemical</h2>
+			<div>
+			</div>
+
+			<h2>Pharmacy</h2>
+			<div>
+			</div>
+
+
+			<h2>Management</h2>
+			<div>
+			</div>
+
+
+			<h2>General</h2>
+			<div>
+			</div>
+
+<!-- 
+			<h2>Electrical - EC</h2>
+			<div>
+			</div>
+
+ -->
+
+		</div>
+
+
+
+
+		
+		<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+		<script src="js/responsiveTabs.js"></script>
+		<script>
+		$(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+		</script>
+	</body>
+</html>
