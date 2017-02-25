@@ -254,17 +254,14 @@
 
 })(jQuery);
 
-// Smooth Scolling
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+//  close the collapsed navbar when touched anywhere
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+         var $navbar = $(".navbar-collapse");
+        var _opened = $navbar.hasClass("in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click();
+        }
+    });
 });
