@@ -133,7 +133,6 @@
         /* 7. START BRANCH LOGO */
         $('.branch').owlCarousel({
             autoPlay: true, //Set AutoPlay to 3 seconds
-            autoplayHoverPause: true,
             mouseDrag: true,
             touchDrag: true,
             items: 5,
@@ -254,3 +253,18 @@
 
 
 })(jQuery);
+
+// Smooth Scolling
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
