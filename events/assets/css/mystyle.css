@@ -60,8 +60,10 @@ body
     background-size: cover;
     background-attachment:fixed;
 }
+
 a:hover{text-decoration:none;color:white}
-.Extrahead{letter-spacing:0.35rem !important}
+.Extrahead{letter-spacing:0.36rem !important}
+
 #footer
 {
     position: fixed;
