@@ -34,6 +34,16 @@
 				}, 100);
 			});
 
+
+			// Animation to navbar to add class menu-animation
+			$(window).on('scroll', function () {
+		        if ($(this).scrollTop() > 100) {
+		            $('.main-menu').addClass('menu-animation');
+		        } else {
+		            $('.main-menu').removeClass('menu-animation');
+		        }
+		    });
+
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 

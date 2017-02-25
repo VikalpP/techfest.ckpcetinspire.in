@@ -31,6 +31,8 @@
 
 /*===================  Event Page  ===================*/
 
+/*Srink navbar when scroll*/
+.navbar-default.menu-animation{padding:2px ; background-color:black !important }
 #main article h2 { margin: 0; }
 #main h2 span { letter-spacing: 2px; }
 
@@ -48,3 +50,34 @@
 
 /*Aligning Center Table*/
 #main table td { text-align: center; border:2px solid #5e6974; }
+
+/*All Department pages common Style */
+body
+{
+    background-repeat: no-repeat;
+    height: 70%;
+    background-position: center ;
+    background-size: cover;
+    background-attachment:fixed;
+}
+a:hover{text-decoration:none;color:white}
+.Extrahead{letter-spacing:0.35rem !important}
+#footer
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background:transparent;
+    border-top: 1px solid white;
+    padding:5px;
+}            
+#chem-page{background-image: url(../../images/chem.png)}
+#civil-page{background-image: url(../../images/civil.png)}
+#comp-page{background-image: url(../../images/comp.png)}
+#elect-page{background-image: url(../../images/electrical.png)}
+#gen-page{background-image: url(../../images/general.png)}
+#mgmt-page{background-image: url(../../images/mgmt.png)}
+#mech-page{background-image: url(../../images/mech.png)}
+#pharm-page{background-image: url(../../images/pharmacy.png)}
+#robo-page{background-image: url(../../images/robotics.png)}

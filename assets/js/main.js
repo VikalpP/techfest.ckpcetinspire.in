@@ -109,14 +109,45 @@
 
 
 
+        $('#Teaser').owlCarousel({
+            items:3,
+            merge:true,
+            loop:true,
+            margin:10,
+            video:true,
+            lazyLoad:true,
+            center:true,
+            responsive:{
+                480:{
+                    items:2
+                },
+                600:{
+                    items:4
+                }
+            }
+        });
+
+
+
 
         /* 7. START BRANCH LOGO */
         $('.branch').owlCarousel({
             autoPlay: true, //Set AutoPlay to 3 seconds
+            autoplayHoverPause: true,
+            mouseDrag: true,
+            touchDrag: true,
             items: 5,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 2],
-            pagination: false
+            pagination: false,
+            responsive:{
+                480:{
+                    items:2
+                },
+                600:{
+                    items:4
+                }
+            }
         });
 
         /* END BRANCH LOGO */
