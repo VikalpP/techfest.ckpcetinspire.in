@@ -1,8 +1,4 @@
-/*
- Author       : Hash Theme.
- Template Name: Kalka - One Page Business Template
- Version      : 1.0
- */
+
 /*=============================================
  Table Of Contents
  ================================================
