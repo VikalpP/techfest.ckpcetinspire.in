@@ -1,0 +1,10 @@
+.flat-table {
+  display: block;
+  font-family: sans-serif;
+  
+  font-size: 115%;
+  overflow: auto;
+  width: auto;
+  
+  
+		}
