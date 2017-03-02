@@ -74,12 +74,18 @@ a:hover{text-decoration:none;color:white}
     border-top: 1px solid white;
     padding:5px;
 }            
-#chem-page{background-image: url(../../images/chem.png)}
-#civil-page{background-image: url(../../images/civil.png)}
-#comp-page{background-image: url(../../images/comp.png)}
-#elect-page{background-image: url(../../images/electrical.png)}
-#gen-page{background-image: url(../../images/general.png)}
-#mgmt-page{background-image: url(../../images/mgmt.png)}
-#mech-page{background-image: url(../../images/mech.png)}
-#pharm-page{background-image: url(../../images/pharmacy.png)}
-#robo-page{background-image: url(../../images/robotics.png)}
+#chem-page #bg{background-image: url(../../images/chem.png)}
+#civil-page #bg{background-image: url(../../images/civil.png)}
+#comp-page #bg{background-image: url(../../images/comp.png)}
+#elect-page #bg{background-image: url(../../images/electrical.png)}
+#gen-page #bg{background-image: url(../../images/general.png)}
+#mgmt-page #bg{background-image: url(../../images/mgmt.png)}
+#mech-page #bg{background-image: url(../../images/mech.png)}
+#pharm-page #bg{background-image: url(../../images/pharmacy.png)}
+#robo-page #bg{background-image: url(../../images/robotics.png)}
+#bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
