@@ -11,7 +11,6 @@
 
     <link rel="icon" href="assets/img/icon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- Google Font -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cousine:400,700|Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -27,11 +26,10 @@
     <![endif]-->
     <link rel="stylesheet" href="assets/css/mystyle.css">
 
-
     <style>
         th {
-            background-color: #7fd5e0;
-            color: #878484;
+            background-color: #00ACC1;
+            color: #FFFFFF;
             font-size: 17px;
             font-weight: normal;
             padding: 20px 30px;
@@ -51,31 +49,12 @@
             padding: 30px;
         }
         
-        table {
-            margin-top: 5%;
-            min-width: 75%;
-        }
+        table {margin-top: 5%;min-width: 75%}
+        col {display: table-column}
+        h1 {padding-top: 80px;align-content: center}
+        h2 {text-align: center}
         
-        col {
-            display: table-column;
-        }
-        
-        h1 {
-            padding-top: 80px;
-            align-content: center;
-        }
-        
-        th {
-            display: run-in;
-        }
-        
-        h2 {
-            text-align: center;
-        }
-        
-        tr,
-        td,
-        th {
+        tr,td,th {
             border: 1px solid #d9d9d9;
             margin-right: 10px;
             margin-top: 5px;
@@ -83,6 +62,10 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        @media all and (max-width: 375px){
+        	.tab-content{padding:0px}
+        }
+        #topcontrol{bottom: 15px !important}
     </style>
 </head>
 
@@ -105,7 +88,7 @@
                         <li><a class="page-scroll" href="../index.html#about"><span>About Us</span></a></li>
                         <li><a class="page-scroll" href="../index.html#events"><span>Events</span></a></li>
                         <li><a class="page-scroll" href="../index.html#registration"><span>Registration</span></a></li>
-                        <li><a class="page-scroll" href="../index.html#sponsors"><span>Sponsors</span></a></li>
+                        <!-- <li><a class="page-scroll" href="../index.html#sponsors"><span>Sponsors</span></a></li> -->
                         <!-- <li><a class="page-scroll" href="schedule/index.html"><span>Schedule</span></a></li> -->
                         <li><a class="page-scroll" href="index.html"><span>Team</span></a></li>
                         <li><a class="page-scroll" href="../index.html#contact"><span>Contact</span></a></li>
@@ -138,7 +121,7 @@
                         </ul>
 
                         <!-- Tab panes -->
-                        <div class="tab-content" style="background-color: #F2F2F2;">
+                        <div class="tab-content" style="background-color: #F2F2F2; overflow-x: auto; ">
                             <div role="tabpanel" class="tab-pane active" id="Faculty">
                                 <center>
                                     <table cellspacing="20" cellpadding="20">
@@ -148,93 +131,93 @@
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Finance</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Mital Dholawala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Mital Dholawala</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Bhadrik Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Bhadrik Patel</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Registration</td>
-                                            <td style="text-align: left; padding-left: 80px;">Dr. Amisha Shah</td>
+                                            <td style="text-align: left; padding-left: 20px;">Dr. Amisha Shah</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Soumita Bid</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Soumita Bid</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Academic/Scheduling</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Bhumika Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Bhumika Patel</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Divyesh Mistry</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Divyesh Mistry</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Web &amp; Poster Designing</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Yogesh Kapuriya</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Yogesh Kapuriya</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Bhumika Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Bhumika Patel</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="3">Campaigning</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Shraddha Mehta</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Shraddha Mehta</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Urvi Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Urvi Patel</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Mehul Chhowala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Mehul Chhowala</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="3">Hospitality , Inauguration &amp; Valedictory</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof Shraddha Mehta</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof Shraddha Mehta</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Urvi Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Urvi Patel</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;"> Dr. Bhumika Desai</td>
+                                            <td style="text-align: left; padding-left: 20px;"> Dr. Bhumika Desai</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Decoration</td>
-                                            <td style="text-align: left; padding-left: 80px;">Ms. Krutika Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Ms. Krutika Patel</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Ms. Krishna Lekinwala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Ms. Krishna Lekinwala</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Food &amp; Sponsorship</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Bhadrik Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Bhadrik Patel</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Ashok Akabari</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Ashok Akabari</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Transport &amp; Accommodation</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Divyesh Mistry</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Divyesh Mistry</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Yogesh Kapuriya</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Yogesh Kapuriya</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Ground &amp; Event Handling</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Divyesh Mistry</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Divyesh Mistry</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Bhadrik Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Bhadrik Patel</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Advertising &amp; Promotion</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Mital Dholawala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Mital Dholawala</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Sharmila Rana</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Sharmila Rana</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Souvenir (E-Magazine)</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Soumita Bid</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Soumita Bid</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Prof. Pinal Harde</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prof. Pinal Harde</td>
                                         </tr>
                                     </table>
                                 </center>
@@ -253,155 +236,155 @@
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Finance</td>
-                                            <td style="text-align: left; padding-left: 80px;">Jay Bhutwala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Jay Bhutwala</td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Aaditya Babariya</td>
+                                            <td style="text-align: left; padding-left: 20px;">Aaditya Babariya</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="4">Registration</td>
-                                            <td style="text-align: left; padding-left: 80px;">Vedant Shah</td>
+                                            <td style="text-align: left; padding-left: 20px;">Vedant Shah</td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Mahendra Gupta</td>
+                                            <td style="text-align: left; padding-left: 20px;">Mahendra Gupta</td>
                                             <td style="text-align: center;">4<sup>th</sup> EC</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Abhishek Gheewala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Abhishek Gheewala</td>
                                             <td style="text-align: center;">4<sup>th</sup> Electrical</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Purvam Joshi </td>
+                                            <td style="text-align: left; padding-left: 20px;">Purvam Joshi </td>
                                             <td style="text-align: center;">3<sup>rd</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Academic/Scheduling</td>
-                                            <td style="text-align: left; padding-left: 80px;">Kaushal Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Kaushal Patel</td>
                                             <td style="text-align: center;">4<sup>th</sup> Civil</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Hunny Jummani</td>
+                                            <td style="text-align: left; padding-left: 20px;">Hunny Jummani</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="4">Web</td>
-                                            <td style="text-align: left; padding-left: 80px;">Dhavan Mehta</td>
+                                            <td style="text-align: left; padding-left: 20px;">Dhavan Mehta</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Vishal Sheth</td>
+                                            <td style="text-align: left; padding-left: 20px;">Vishal Sheth</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Mayank Jariwala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Mayank Jariwala</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Mohit Saini</td>
+                                            <td style="text-align: left; padding-left: 20px;">Mohit Saini</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="4" style="text-align: center;"> Poster Designing</td>
-                                            <td style="text-align: left; padding-left: 80px;">Razin Tailor</td>
+                                            <td style="text-align: left; padding-left: 20px;">Razin Tailor</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Kishan Charanawala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Kishan Charanawala</td>
                                             <td style="text-align: center; ">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Darshan Purani</td>
+                                            <td style="text-align: left; padding-left: 20px;">Darshan Purani</td>
                                             <td style="text-align: center; ">1<sup>st</sup> Mech</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Shubham Shah</td>
+                                            <td style="text-align: left; padding-left: 20px;">Shubham Shah</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="3">Campaigning</td>
-                                            <td style="text-align: left; padding-left: 80px;">Jay Parekh </td>
+                                            <td style="text-align: left; padding-left: 20px;">Jay Parekh </td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Meet Shah</td>
+                                            <td style="text-align: left; padding-left: 20px;">Meet Shah</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Parjanya Patolawala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Parjanya Patolawala</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Electrical</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="3">Hospitality, Inauguration &amp; Valedictory</td>
-                                            <td style="text-align: left; padding-left: 80px;">Aayushi Prasad</td>
+                                            <td style="text-align: left; padding-left: 20px;">Aayushi Prasad</td>
                                             <td style="text-align: center;">4<sup>th</sup> EC</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Hinal Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Hinal Patel</td>
                                             <td style="text-align: center;">4<sup>th</sup> EC</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Brijesh Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Brijesh Patel</td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Decoration</td>
-                                            <td style="text-align: left; padding-left: 80px;">Prakash Makwana</td>
+                                            <td style="text-align: left; padding-left: 20px;">Prakash Makwana</td>
                                             <td style="text-align: center;">4<sup>th</sup> Civil</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Komal Kotak</td>
+                                            <td style="text-align: left; padding-left: 20px;">Komal Kotak</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="3">Food &amp; Sponsorship</td>
-                                            <td style="text-align: left; padding-left: 80px;">Ganesh Dasari</td>
+                                            <td style="text-align: left; padding-left: 20px;">Ganesh Dasari</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Mech</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Raj Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Raj Patel</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Mech</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Modi Tej</td>
+                                            <td style="text-align: left; padding-left: 20px;">Modi Tej</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Transport &amp; Accommodation</td>
-                                            <td style="text-align: left; padding-left: 80px;">Jigar Patel</td>
+                                            <td style="text-align: left; padding-left: 20px;">Jigar Patel</td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Bhavik Gheewala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Bhavik Gheewala</td>
                                             <td style="text-align: center;">4<sup>th</sup> Civil</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Ground &amp; Event Handling</td>
-                                            <td style="text-align: left;padding-left: 80px;">Ruchim Trivedi</td>
+                                            <td style="text-align: left;padding-left: 20px;">Ruchim Trivedi</td>
                                             <td style="text-align: center;">3<sup>rd</sup> EC</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Arpit Khanna</td>
+                                            <td style="text-align: left; padding-left: 20px;">Arpit Khanna</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Mech</td>
                                         </tr>
                                         <tr class="even">
                                             <td rowspan="2">Advertising &amp; Promotion</td>
-                                            <td style="text-align: left; padding-left: 80px;">Nisarg Trivedi</td>
+                                            <td style="text-align: left; padding-left: 20px;">Nisarg Trivedi</td>
                                             <td style="text-align: center;">4<sup>th</sup> Electrical</td>
                                         </tr>
                                         <tr class="even">
-                                            <td style="text-align: left; padding-left: 80px;">Shiv Nemlawala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Shiv Nemlawala</td>
                                             <td style="text-align: center;">4<sup>th</sup> Comp</td>
                                         </tr>
                                         <tr class="odd">
                                             <td rowspan="2">Souvenir (E-Magazine)</td>
-                                            <td style="text-align: left; padding-left: 80px;">Bhargav Jariwala</td>
+                                            <td style="text-align: left; padding-left: 20px;">Bhargav Jariwala</td>
                                             <td style="text-align: center;">3<sup>rd</sup> Civil</td>
                                         </tr>
                                         <tr class="odd">
-                                            <td style="text-align: left; padding-left: 80px;">Arpan Saxena</td>
+                                            <td style="text-align: left; padding-left: 20px;">Arpan Saxena</td>
                                             <td style="text-align: center;">4<sup>th</sup> Mech</td>
                                         </tr>
                                     </table>
