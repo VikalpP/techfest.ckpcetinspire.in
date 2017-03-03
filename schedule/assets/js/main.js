@@ -1,4 +1,8 @@
-
+/*
+ Author       : Hash Theme.
+ Template Name: Kalka - One Page Business Template
+ Version      : 1.0
+ */
 /*=============================================
  Table Of Contents
  ================================================
@@ -105,44 +109,14 @@
 
 
 
-        $('#Teaser').owlCarousel({
-            items:3,
-            merge:true,
-            loop:true,
-            margin:10,
-            video:true,
-            lazyLoad:true,
-            center:true,
-            responsive:{
-                480:{
-                    items:2
-                },
-                600:{
-                    items:4
-                }
-            }
-        });
-
-
-
 
         /* 7. START BRANCH LOGO */
         $('.branch').owlCarousel({
             autoPlay: true, //Set AutoPlay to 3 seconds
-            mouseDrag: true,
-            touchDrag: true,
-            items: 2,
-            itemsDesktop: [626, 2],
-            itemsDesktopSmall: [626, 2],
-            pagination: false,
-            // responsive:{
-            //     480:{
-            //         items:2
-            //     },
-            //     600:{
-            //         items:4
-            //     }
-            // }
+            items: 5,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 2],
+            pagination: false
         });
 
         /* END BRANCH LOGO */
@@ -249,15 +223,3 @@
 
 
 })(jQuery);
-
-//  close the collapsed navbar when touched anywhere
-$(document).ready(function () {
-    $(document).click(function (event) {
-        var clickover = $(event.target);
-         var $navbar = $(".navbar-collapse");
-        var _opened = $navbar.hasClass("in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $("button.navbar-toggle").click();
-        }
-    });
-});

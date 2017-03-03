@@ -51,7 +51,6 @@
         }
 
         ul.marquee {padding: 8px}
-
         ul.marquee li {
             font-family: 'Montserrat', Verdana;
             list-style: none;
@@ -72,6 +71,53 @@
         #sponsors {padding: 50px 0px}
 
         #sponsors .section-title {margin-bottom: 20px}
+        li a:hover, .dropdown:hover .dropbtn {background-color: #00ACC1}
+        li.dropdown {display: inline-block}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #00ACC1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f5F5F5}
+
+        .dropdown:hover .dropdown-content {display: block}
+
+        .dropdown-content a:hover{text-shadow:none !important}
+
+        .single-counter .single-counter-icon:before {right: -12px;top: 40px;}
+        .fa-user-o:before {
+            content: "\f2c0";
+            position: absolute;
+            left: 23px;
+            top: 17px;
+        }
+        @media all and (max-width: 650px) and (min-width: 472px){
+            .col-xs-offset-4{margin-left: 25% !important;}
+        }
+        @media all and (max-width: 471px){
+            .col-xs-offset-4{margin-left: 10% !important;}   
+            .col-xs-8{width: 90% !important;}
+        }
+        @media all and (max-width: 371px){
+            .col-xs-offset-4{margin-left: 0% !important;}   
+            .col-xs-8{width: 100% !important;padding-left: 0px;padding-right: 0px}
+        }
+        .reg{margin-top: 45px;}
+        .reg .single-counter-icon{margin-top: 15px;}        
+        .single-counter-icon{width: 105px;height: 135px}
+
     </style>
 </head>
 
@@ -79,8 +125,9 @@
 
     <marquee style="background-color:#00ACC1;padding:2px;position: fixed;bottom:0px;left: 0px;right:0px;z-index: 1;">
         <ul class="marquee">
-            <li>Registration has been closed</li>
+            <li>Registration has been closed.</li>
             <li>Now you can verify your registration detail with our system. Visit registration section.</li>
+            <li>Schedule is live now.</li>
         </ul>
     </marquee>
 
@@ -115,8 +162,15 @@
                             <li><a class="page-scroll" href="#events"><span>Events</span></a></li>
                             <li><a class="page-scroll" href="#registration"><span>Registration</span></a></li>
                             <!-- <li><a class="page-scroll" href="#sponsors"><span>Sponsors</span></a></li> -->
-                            <!--<li><a class="page-scroll" href="#schedule"><span>Schedule</span></a></li>-->
-                            <li><a class="page-scroll" href="team/index.html"><span>Team</span></a></li>
+                            <li class="dropdown">
+                                <a href="schedule/sch_day1.html" class="page-scroll"><span>Schedule</a></span>
+                                <div class="dropdown-content">
+                                    <a href="schedule/sch_day1.html">Day 1</a>
+                                    <a href="schedule/sch_day2.html">Day 2</a>
+                                </div>
+                            </li>
+                            <li><a class="page-scroll" href="team/team.html"><span>Team</span></a></li>
+                            <li><a class="page-scroll" href="team/participants.html"><span>Participants</span></a></li>
                             <li><a class="page-scroll" href="#contact"><span>Contact</span></a></li>
                         </ul>
                     </nav>
@@ -308,7 +362,7 @@
 
 
         <!-- START SCHEDULE -->
-        <section id="registration" class="section-padding">
+        <section id="registration" class="counter-section section-padding">
             <div class="container text-center">
                 <div class="row">
                     <div class="section-title">
@@ -317,35 +371,30 @@
                     <!-- END SECTION TITLE -->
                     <div class="text-justify">
                         <div class="col-md-6 col-sm-12">
-                            <h4 class="wow slideInLeft" data-wow-delay="0.1s"> Steps for Registrations
-                            </h4>
-                            <ol style="line-height:2em;text-align: justify;" class="wow fadeIn" data-wow-delay="0.4s">
-                                <li>Visit the following link to register.</li>
-                                <li>Online receipt for pending registration will be generated. Keep it with you for your record.</li>
-                                <li>Your registration will get confirmed upon receiving payment at our side.</li>
-                                <li>A representative from our institute would contact and probably visit your college on February 27, 2017 for payment or else we would contact you in person for the same.</li>
-                                <li>You can contact us on our email address or mobile number mentioned on poster for any further query.</li>
-                            </ol>
-                            <br/>
-                            <span class="btn btn-primary text-center wow fadeIn" data-wow-delay="0.4s" style="font-weight: bolder;box-shadow:2px 2px 2px #999; background-color: #999; border-color: #999">
-                                    Registration closed
-                                </span>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
                             <h4 class="wow slideInLeft" data-wow-delay="0.1s">
                                 Check Your Registration Details
                             </h4>
                             <ol style="line-height:2em;text-align: justify;" class="wow fadeIn" data-wow-delay="0.4s">
                                 <li>Visit the following link to check your registration detail.</li>
                                 <li>You are required to enter valid enrollment no.</li>
-                                <li>Do not panic in case you do not found your registration detail, since your registration would be in backend for further processing.</li>
                                 <li>All the registration entries will be made online by March 1, 2017.</li>
                                 <li style="font-weight: 600;">You are required to contact us in case of MISSING or INCORRECT registration detail after above mentioned date i.e. March 1, 2017.</li>
                             </ol>
                             <br/>
                             <a class="btn btn-primary text-center wow fadeIn" data-wow-delay="0.4s" style="font-weight: bolder;box-shadow:2px 2px 2px #999;" href="http://webapp.ckpcetinspire.in/reports/student-registration" target="_blank">
                                     Check Status
-                                </a>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12 single-counter reg">
+                            <div class="col-xs-offset-4 col-xs-8">
+                                <div class="single-counter-icon">
+                                    <i class="fa fa-user-o" style="width: 105px; height: 105px; font-size: 5em"></i>
+                                </div>
+                                <div class="single-counter-text" style="margin-top: 30px;">
+                                    <h2 class="timer">7200</h2>
+                                    <h5> Participants </h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,154 +413,162 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="branch-inner " style="background-color: transparent; box-shadow: none;">
-                            <a href="http://www.icegateinstitute.com/" target="_blank">
-                                <img src="assets/img/sponsors/ICE_logo.png" class="img-responsive" width="200px" alt="ICE" style="margin: auto;">
-                            </a>
+                        <div class="branch">
+                            <div class="item">
+                                <div class="branch-inner " style="background-color: transparent; box-shadow: none;">
+                                    <a href="http://www.icegateinstitute.com/" target="_blank">
+                                        <img src="assets/img/sponsors/ICE_logo.png" class="img-responsive" width="200px" alt="ICE" style="margin: auto;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="branch-inner " style="background-color: transparent; box-shadow: none;">
+                                    <a href="http://www.ssminfotech.com/" target="_blank">
+                                        <img src="assets/img/sponsors/SSM_logo.png" class="img-responsive" width="131px" alt="SSM" style="margin: auto;">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-    </div>
-    </section>
-    <!-- END SPONSORS -->
+        </section>
+        <!-- END SPONSORS -->
 
 
-    <!-- START CONTACT -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="section-title text-center">
-                    <h2>Connect with us</h2>
+        <!-- START CONTACT -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h2>Connect with us</h2>
+                    </div>
+                    <!-- END SECTION TITLE -->
                 </div>
-                <!-- END SECTION TITLE -->
+                <!-- END ROW -->
+
+                <div class="row">
+                    <div class="single-address col-md-4 col-sm-4 col-xs-12">
+                        <!--  Changed in style.css at line 2116(width:100%;)  -->
+                        <div class="single-address-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="single-address-text">
+                            <h4>Our Location</h4>
+                            <p>
+                                Near Malvan Mandir <br/> Via Magdalla Port <br/> Dumas Road, Surat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-address col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-address-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="single-address-text">
+                            <h4>Our Phone</h4>
+                            <p>
+                                +91 89800-38196
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-address col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-address-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="single-address-text">
+                            <h4>Our Email</h4>
+                            <p>
+                                techfest17@ckpcet.ac.in <br/><br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--- END ROW -->
             </div>
-            <!-- END ROW -->
-
-            <div class="row">
-                <div class="single-address col-md-4 col-sm-4 col-xs-12">
-                    <!--  Changed in style.css at line 2116(width:100%;)  -->
-                    <div class="single-address-icon">
-                        <i class="fa fa-map-marker"></i>
-                    </div>
-                    <div class="single-address-text">
-                        <h4>Our Location</h4>
-                        <p>
-                            Near Malvan Mandir <br/> Via Magdalla Port <br/> Dumas Road, Surat.
-                        </p>
-                    </div>
-                </div>
-                <div class="single-address col-md-4 col-sm-4 col-xs-12">
-                    <div class="single-address-icon">
-                        <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="single-address-text">
-                        <h4>Our Phone</h4>
-                        <p>
-                            +91 89800-38196
-                        </p>
-                    </div>
-                </div>
-                <div class="single-address col-md-4 col-sm-4 col-xs-12">
-                    <div class="single-address-icon">
-                        <i class="fa fa-envelope-o"></i>
-                    </div>
-                    <div class="single-address-text">
-                        <h4>Our Email</h4>
-                        <p>
-                            techfest17@ckpcet.ac.in <br/><br/>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--- END ROW -->
-        </div>
-        <!--- END CONTAINER -->
-    </section>
-    <!-- END CONTACT -->
+            <!--- END CONTAINER -->
+        </section>
+        <!-- END CONTACT -->
 
 
-
-    <section class="bg-gray template-feature section-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="section-title text-center">
-                    <h2>Reach us</h2>
-                </div>
-            </div>
-            <!-- END ROW -->
-            <div class="row">
-                <div class="col-xs-12 col-md-7 col-sm-12 col-lg-7">
-                <div class="container">
-                    
-                    <ol style="line-height:2em;text-align: justify;list-style-type: square;">
-                        <li>Till ONGC-Nagar BRTS Facility is available .</li>
-                        <li>From ONGC-Nagar to our college-bus facility is available </li>
-                        <li>For further inquiry for transportation contact us</li>
-                        <ul style="font-weight: bolder; margin-left: 20px; list-style-type: disc">
-                            <li>Jigar Patel - 8160355063</li>
-                            <li>Bhavik Gheewala - 9726447323</li>
-                        </ul>
-                    </ol>
+        <section class="bg-gray template-feature section-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h2>Reach us</h2>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-5 col-sm-12 col-lg-5">
-                    <div align="center" data-toggle="modal" data-target="#myModal" id="brts">
-                        <img src="http://images.clipartpanda.com/location-icon-map-location_icon.png" class="img-responsive" height="200" width="200" alt="BRTS" />
-                        <h4>BRTS route map</h4>
+                <!-- END ROW -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-7 col-sm-12 col-lg-7">
+                        <div class="container">
+
+                            <ol style="line-height:2em;text-align: justify;list-style-type: square;">
+                                <li>Till ONGC-Nagar BRTS Facility is available .</li>
+                                <li>From ONGC-Nagar to our college-bus facility is available </li>
+                                <li>For further inquiry for transportation contact us</li>
+                                <ul style="font-weight: bolder; margin-left: 20px; list-style-type: disc">
+                                    <li>Jigar Patel - 8160355063</li>
+                                    <li>Bhavik Gheewala - 9726447323</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-sm-12 col-lg-5">
+                        <div align="center" data-toggle="modal" data-target="#myModal" id="brts">
+                            <img src="http://images.clipartpanda.com/location-icon-map-location_icon.png" class="img-responsive" height="200" width="200" alt="BRTS" />
+                            <h4>BRTS route map</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- BRTS Modal-->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" style="width: 90%; margin: 20px auto;">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="assets/img/BRTs.jpg" alt="BRTs root" style="max-width: 100%;">
+        <!-- BRTS Modal-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 90%; margin: 20px auto;">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/img/BRTs.jpg" alt="BRTs root" style="max-width: 100%;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal End -->
+        <!-- Modal End -->
 
 
-    <!-- START MAP -->
-    <div id="map">
-    </div>
-    <!-- END MAP -->
-
-    <!-- START FOOTER TOP -->
-    <div class="footer-top section-padding" style="margin-bottom:15px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="assets/img/logo_footer.png" alt="footer-logo"></a>
-                    </div>
-                    <div class="footer-social">
-                        <ul>
-                            <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="s-facebook" href="https://www.facebook.com/GTUTechFest.ckpcet/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a data-toggle="tooltip" data-placement="top" title="Instagram" class="s-instagram" href="https://www.instagram.com/inspire_ckpcet/"><i class="fa fa-instagram"></i></a></li>
-                            <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="s-youtube" href="https://www.youtube.com/playlist?list=PLMornw353m1B4OtnAEJDgc6i9X-hIe44i"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="copyright">
-                        <p>© 2017 ckpcetinspire.in. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <!--- END COL -->
-            </div>
-            <!--- END ROW -->
+        <!-- START MAP -->
+        <div id="map">
         </div>
-        <!--- END CONTAINER -->
-    </div>
-    <!-- END FOOTER TOP -->
+        <!-- END MAP -->
+
+        <!-- START FOOTER TOP -->
+        <div class="footer-top section-padding" style="margin-bottom:15px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="assets/img/logo_footer.png" alt="footer-logo"></a>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="s-facebook" href="https://www.facebook.com/GTUTechFest.ckpcet/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a data-toggle="tooltip" data-placement="top" title="Instagram" class="s-instagram" href="https://www.instagram.com/inspire_ckpcet/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="s-youtube" href="https://www.youtube.com/playlist?list=PLMornw353m1B4OtnAEJDgc6i9X-hIe44i"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2017 ckpcetinspire.in. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <!--- END COL -->
+                </div>
+                <!--- END ROW -->
+            </div>
+            <!--- END CONTAINER -->
+        </div>
+        <!-- END FOOTER TOP -->
 
     </div>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
