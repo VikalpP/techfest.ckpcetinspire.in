@@ -9,7 +9,7 @@
 
     <title>GTU TECHFEST PARTICIPANTS</title>
 
-    <link rel="icon" href="../assets/img/icon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/img/icon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- Google Font -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/venobox/css/venobox.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/v_style.css">
     <!--[if lt IE 9]>
                       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
                       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -26,68 +25,46 @@
     <link rel="stylesheet" href="assets/css/mystyle.css">
 
     <style>
+        .tab-content {padding: 20px}
+        .card{box-shadow: 0 1px 3px rgba(0,0,0,.3)}
         th {
             background-color: rgb(50, 193, 239);
-            color: white;
+            color: #FFFFFF;
+            font-size: 17px;
             font-weight: normal;
             padding: 20px 30px;
             text-align: center;
         }
         
         tr.odd {
-            background-color: rgb(238, 238, 238);
+            background-color: rgb(242,242,242);
             color: rgb(111, 111, 111);
             padding: 30px;
             text-align: center;
         }
         
         tr.even {
-            background-color: rgb(176, 227, 243);
+            background-color: #cceef2;
             color: rgb(111, 111, 111);
             padding: 30px;
         }
         
         table {margin-top: 5%;min-width: 75%}
-        
         col {display: table-column}
-        
-        h2 {text-align: center;text-transform: uppercase}
-        
-        tr,td,th {
-            border: 2px solid gray;
-            margin-right: 10px;
-            margin-top: 5px;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        
-        table#t01 tr:nth-child(even) {
-            background-color: rgb(176, 227, 243);
-        }
-        
-        table#t01 tr:nth-child(odd) {
-            background-color: rgb(238, 238, 238);
-        }
-        
-        table#t01 th {
-            color: white;
-            background-color: rgb(50, 193, 239);
-        }
-        
-        li a:hover,.dropdown:hover .dropbtn {background-color: #00ACC1}
-        
+        h1 {padding-top: 80px;align-content: center}
+        h2 {text-align: center;font-size: 42px !important;}
+        a, a:hover {color: #00acc1}
+        li a:hover, .dropdown:hover .dropbtn {background-color: #00ACC1}
         li.dropdown {display: inline-block}
-        
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #00ACC1;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-        
+
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
@@ -95,17 +72,44 @@
             display: block;
             text-align: left;
         }
-        
+
         .dropdown-content a:hover {background-color: #f5F5F5}
-        
         .dropdown:hover .dropdown-content {display: block}
+        .dropdown-content a:hover{text-shadow:none !important}
+
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover 
+        {
+            color: white;
+            background-color: rgb(50, 193, 239);
+        }
+        .nav-tabs > li {width:20%; text-align:center}
+        .nav-tabs > li.active::after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            left:48%;
+            bottom: -14px;
+            border: 7px solid transparent;
+            border-top: 7px solid rgb(50, 193, 239);
+        }
         
-        .dropdown-content a:hover {text-shadow: none !important}
+        tr,td,th {
+            border: 1px solid #d9d9d9;
+            margin-right: 10px;
+            margin-top: 5px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        @media all and (max-width: 666px){.nav-tabs>li>a>span {display: none}.nav-tabs > li.active::after {left: 43%}}
+        @media all and (max-width: 450px){.nav-tabs > li.active::after {left: 40%}}
+        @media all and (max-width: 375px){.tab-content{padding:0px}.nav-tabs > li.active::after {left: 38%}}
         #topcontrol{bottom: 15px !important}
     </style>
 </head>
 
-<body data-spy="scroll" data-offset="80" class="single-page">
+<body data-spy="scroll" data-offset="80">
 
     <div class="navbar navbar-default navbar-fixed-top main-menu">
         <div class="container">
@@ -116,26 +120,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../index.html" class="navbar-brand"><img src="../assets/img/logo_footer.png"></a>
+                <a href="index.html" class="navbar-brand"><img src="assets/img/logo_footer.png"></a>
             </div>
             <div class="navbar-collapse collapse" id="myNavbar">
                 <nav>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="../index.html#home"><span>Home</span></a></li>
-                        <li><a class="page-scroll" href="../index.html#about"><span>About Us</span></a></li>
-                        <li><a class="page-scroll" href="../index.html#events"><span>Events</span></a></li>
-                        <li><a class="page-scroll" href="../index.html#registration"><span>Registration</span></a></li>
-                        <!-- <li><a class="page-scroll" href="../index.html#sponsors"><span>Sponsors</span></a></li> -->
+                        <li><a class="page-scroll" href="index.html#home"><span>Home</span></a></li>
+                        <li><a class="page-scroll" href="index.html#about"><span>About Us</span></a></li>
+                        <li><a class="page-scroll" href="index.html#events"><span>Events</span></a></li>
+                        <li><a class="page-scroll" href="index.html#registration"><span>Registration</span></a></li>
+                        <!-- <li><a class="page-scroll" href="index.html#sponsors"><span>Sponsors</span></a></li> -->
                         <li class="dropdown">
-                            <a href="../schedule/sch_day1.html" class="page-scroll"><span>Schedule</a></span>
+                            <a href="schedule/sch_day1.html" class="page-scroll"><span>Schedule</a></span>
                             <div class="dropdown-content">
-                                <a href="../schedule/sch_day1.html">Day 1</a>
-                                <a href="../schedule/sch_day2.html">Day 2</a>
+                                <a href="schedule/sch_day1.html">Day 1</a>
+                                <a href="schedule/sch_day2.html">Day 2</a>
                             </div>
                         </li>
                         <li><a class="page-scroll" href="team.html"><span>Team</span></a></li>
                         <li><a class="page-scroll" href="participants.html"><span>Participants</span></a></li>
-                        <li><a class="page-scroll" href="../index.html#contact"><span>Contact</span></a></li>
+                        <li><a class="page-scroll" href="index.html#contact"><span>Contact</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -183,7 +187,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-center">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="../assets/img/logo_footer.png" alt="footer-logo"></a>
+                            <a href="index.html"><img src="assets/img/logo_footer.png" alt="footer-logo"></a>
                         </div>
                         <div class="footer-social">
                             <ul>
@@ -216,9 +220,6 @@
     <script src="assets/js/scroll-to-top.js"></script>
     <!-- WOW - Reveal Animations When You Scroll -->
     <script src="assets/js/wow.min.js"></script>
-
-    <script type="text/javascript" src="assets/js/v_main.js"></script>
-    <script type="text/javascript" src="assets/js/v_modernizr.js"></script>
 
 </body>
 
