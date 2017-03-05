@@ -40,15 +40,17 @@
         .carousel-inner>.item>a>img {margin: auto}
         
         h2.section-title {font-family: ancient}
+        .navbar-collapse.in {margin-top: 8px}
+        @media (min-width:768px) and (max-width: 992px){.navbar .container{width:98%}}
+        @media only screen and (max-width: 900px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 9px}}
+        @media only screen and (max-width: 802px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 6.703px}}
         
         @media all and (max-width: 799px) {
             img#logo {max-height: 375px !important}
             #Video iframe{max-width: 100%}
         }
         
-        @media all and (min-width: 800px) {
-            img#logo {height: 500px !important}
-        }
+        @media all and (min-width: 800px) {img#logo {height: 500px !important}}
 
         ul.marquee {padding: 8px}
         ul.marquee li {
@@ -63,14 +65,11 @@
         }
         
         ul.marquee li:last-of-type {border-right: none}
-
         .single-feature-text h4 {color: inherit}
-
         #Video iframe{width:560px; height:315px}
-
         #sponsors {padding: 50px 0px}
-
         #sponsors .section-title {margin-bottom: 20px}
+
         li a:hover, .dropdown:hover .dropbtn {background-color: #00ACC1}
         li.dropdown {display: inline-block}
         .dropdown-content {
@@ -91,25 +90,18 @@
         }
 
         .dropdown-content a:hover {background-color: #f5F5F5}
-
         .dropdown:hover .dropdown-content {display: block}
-
         .dropdown-content a:hover{text-shadow:none !important}
-
         .single-counter .single-counter-icon:before {right: -12px;top: 40px;}
+
         .fa-user-o:before {
             content: "\f2c0";
             position: absolute;
             left: 23px;
             top: 17px;
         }
-        @media all and (max-width: 650px) and (min-width: 472px){
-            .col-xs-offset-4{margin-left: 25% !important;}
-        }
-        @media all and (max-width: 471px){
-            .col-xs-offset-4{margin-left: 10% !important;}   
-            .col-xs-8{width: 90% !important;}
-        }
+        @media all and (max-width: 650px){.col-xs-offset-4{margin-left: 25% !important}}
+        @media all and (max-width: 471px){.col-xs-offset-4{margin-left: 10% !important}.col-xs-8{width: 90% !important}}
         @media all and (max-width: 371px){
             .col-xs-offset-4{margin-left: 0% !important;}   
             .col-xs-8{width: 100% !important;padding-left: 0px;padding-right: 0px}
