@@ -89,3 +89,6 @@ a:hover{text-decoration:none;color:white}
     background-size: cover;
     background-attachment: fixed;
 }
+@media (min-width:768px) and (max-width: 1200px){.navbar .container{width:98%}}
+@media (min-width: 768px){.navbar-collapse.collapse{display: flex !important}}
+@media (max-width: 1130px) and (min-width: 768px){.navbar-brand{margin-top: 31px}}

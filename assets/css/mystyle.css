@@ -55,3 +55,9 @@ div.news{
     background-color: #000;
     color:#FFF;
 }
+
+/*navbar adjustment*/
+.navbar-collapse.in {margin-top: 8px}
+@media (min-width:768px) and (max-width: 992px){.navbar .container{width:98%}}
+@media only screen and (max-width: 924px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 9px}}
+@media only screen and (max-width: 825px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 5.468px}}

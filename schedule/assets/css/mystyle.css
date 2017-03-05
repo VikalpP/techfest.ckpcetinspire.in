@@ -55,6 +55,12 @@ h2.section-title
     img#logo { height: 500px !important; }
 }
 
+/*navbar adjustment*/
+.navbar-collapse.in {margin-top: 8px}
+@media (min-width:768px) and (max-width: 992px){.navbar .container{width:98%}}
+@media only screen and (max-width: 900px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 9px}}
+@media only screen and (max-width: 802px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 6.703px}}
+
 .nav-tabs { border-bottom: 2px solid #DDD; }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0;  }
 .nav-tabs > li > a { border: none; color: #ffffff;background: #00ACC1; }
