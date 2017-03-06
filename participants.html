@@ -28,58 +28,10 @@
         <link rel="stylesheet" href="assets/css/mystyle.css">
 
         <style>
-            .tab-content {padding: 20px}
-            .card{box-shadow: 0 1px 3px rgba(0,0,0,.3)}
-            th {
-                background-color: rgb(50, 193, 239);
-                color: #FFFFFF;
-                font-size: 17px;
-                font-weight: normal;
-                padding: 20px 30px;
-                text-align: center;
-            }
-
-            tr.odd {
-                background-color: rgb(242,242,242);
-                color: rgb(111, 111, 111);
-                padding: 30px;
-                text-align: center;
-            }
-
-            tr.even {
-                background-color: #cceef2;
-                color: rgb(111, 111, 111);
-                padding: 30px;
-            }
-
-            table {margin-top: 5%;min-width: 75%}
-            col {display: table-column}
             h1 {padding-top: 80px;align-content: center}
             h2 {text-align: center;font-size: 42px !important;}
             a, a:hover {color: #00acc1}
-            li a:hover, .dropdown:hover .dropbtn {background-color: #00ACC1}
-            li.dropdown {display: inline-block}
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #00ACC1;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-            .dropdown-content a:hover {background-color: #f5F5F5}
-            .dropdown:hover .dropdown-content {display: block}
-            .dropdown-content a:hover{text-shadow:none !important}
-
+            
             .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover 
             {
                 color: white;
@@ -95,15 +47,6 @@
                 bottom: -14px;
                 border: 7px solid transparent;
                 border-top: 7px solid rgb(50, 193, 239);
-            }
-
-            tr,td,th {
-                border: 1px solid #d9d9d9;
-                margin-right: 10px;
-                margin-top: 5px;
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 10px;
             }
             @media all and (max-width: 666px){.nav-tabs>li>a>span {display: none}.nav-tabs > li.active::after {left: 43%}}
             @media all and (max-width: 450px){.nav-tabs > li.active::after {left: 40%}}
@@ -168,7 +111,7 @@
                                 <li role="presentation"><a href="#Winners" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-trophy"></i>  <span>Winners</span></a></li>
                             </ul>
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content" style="background-color: #F2F2F2; overflow-x: auto">
                                 <div role="tabpanel" class="tab-pane active" id="Shortlisted">
                                     <center>
                                         <table cellspacing="20" cellpadding="20">
@@ -176,14 +119,14 @@
                                                 <th>Department</th>
                                                 <th>Shortlisted Participants</th>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="even">
                                                 <td rowspan="3">Computer</td>
                                                 <td class="extraSP"><a class="pdf" href="pdf/cquiz.pdf" download="download">C-Quiz</a></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="even">
                                                 <td><a class="pdf" href="pdf/relay.pdf"  download="download">Relay Coding</a></td>
                                             </tr>
-                                            <tr class="odd">
+                                            <tr class="even">
                                                 <td><a class="pdf" href="pdf/e-treasure.pdf" download="download">E-treasure Hunt</a></td>
                                             </tr>
                                         </table>

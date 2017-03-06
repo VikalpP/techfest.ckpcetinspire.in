@@ -56,8 +56,69 @@ div.news{
     color:#FFF;
 }
 
+/*Dropdown*/
+li a:hover, .dropdown:hover .dropbtn {background-color: #00ACC1}
+li.dropdown {display: inline-block}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00ACC1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f5F5F5}
+.dropdown:hover .dropdown-content {display: block}
+.dropdown-content a:hover{text-shadow:none !important}
+
+
 /*navbar adjustment*/
 .navbar-collapse.in {margin-top: 8px}
 @media (min-width:768px) and (max-width: 992px){.navbar .container{width:98%}}
 @media only screen and (max-width: 924px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 9px}}
 @media only screen and (max-width: 825px){.navbar-default .navbar-nav>li>a {margin-top: 6px;padding: 5.468px}}
+
+/*table styles*/
+.tab-content {padding: 20px}
+.card{box-shadow: 0 1px 3px rgba(0,0,0,.3)}
+th {
+    background-color: rgb(50, 193, 239);
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+tr.odd {
+    background-color: rgb(242,242,242);
+    color: rgb(111, 111, 111);
+    padding: 30px;
+    text-align: center;
+}
+
+tr.even {
+    background-color: #cceef2;
+    color: rgb(111, 111, 111);
+    padding: 30px;
+}
+
+table {margin-top: 5%;min-width: 75%}
+col {display: table-column}
+tr,td,th {
+    border: 1px solid #d9d9d9;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
